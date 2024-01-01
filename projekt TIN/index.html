@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technologie Internetu - Projekt</title>
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="logo.jpg" alt="">
+
+        <ul>
+            <li><a href="index.html" class="menu">Home</a></li>
+            <li><a href="#" class="menu">O mnie</a></li>
+            <li><a href="#" class="menu">Kontakt</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+
+
+    </nav>
+
+    <div class="game-containter">
+
+        <div class="game-change">
+            <div class="game-title">Kamień, Papier, Nożyce</div>
+            <div><img class="game-logo" src="kamien_papier.jpg" alt=""></div>
+            <a href="kamien_papier_nozyce.html" class="game-button" style="--clr:#1e9bff"><span>Zagraj</span><i></i></a>
+        </div>
+
+        <div class="game-change">
+            <div class="game-title">Gra w kości</div>
+            <div><img class="game-logo" src="kosci.jpg" alt=""></div>
+            <a href="kosci.html" class="game-button" style="--clr:#6eff3e"><span>Zagraj</span><i></i></a>
+        </div>
+
+        <div class="game-change">
+            <div class="game-title">Zapamiętaj kolejność</div>
+            <div><img class="game-logo" src="music.jpg" alt=""></div>
+            <a href="zapamietywanie_dzwiekow.html" class="game-button" style="--clr:#ff1867"><span>Zagraj</span><i></i></a>
+        </div>
+
+    </div>
+
+    <script>
+
+        const mobileNav = document.querySelector('ul');
+        const burgerIcon = document.querySelector('.burger');
+
+        burgerIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            burgerIcon.classList.toggle('active');
+            
+        })
+
+    </script>
+
+
+
+</body>
+</html>
