@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technologie Internetu - Projekt - gra_2</title>
+</head>
+<body>
+
+    <nav>
+        <img class="logo" src="logo.jpg" alt="">
+
+        <ul>
+            <li><a href="index.html" class="menu">Home</a></li>
+            <li><a href="kamien_papier_nozyce.html" class="menu">Kamień || Papier || Nożyce</a></li>
+            <li><a href="kosci.html" class="menu">Gra w kości</a></li>
+            <li><a href="zapamietywanie_dzwiekow.html" class="menu">Zapamiętaj kolejność</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+
+
+    </nav>
+
+    <section class="game_2_conteiner">
+        <div class="game_2_result_field">
+            <div class="game_2_result_images">
+                <span class="game_2_user_result">
+                    <img src="1.png" alt=""/>
+                </span>
+                <span class="game_2_cpu_result">
+                    <img src="1.png" alt=""/>
+                </span>
+            </div>
+            <div class="game_2_result"><p>Witam w grze!</p></div>
+                <div class="game_2-change">
+                    <p class="game-button" style="--clr:#ffe629d3"><span>Zagraj</span><i></i></p>
+                </div>
+        </div>
+
+        
+
+    </section>
+
+
+
+
+    <script>
+
+        const mobileNav = document.querySelector('ul');
+        const burgerIcon = document.querySelector('.burger');
+
+        burgerIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            burgerIcon.classList.toggle('active');
+            
+        })
+
+    </script>
+
+    <script src="script_game2.js" defer></script>
+
+</body>
+</html>

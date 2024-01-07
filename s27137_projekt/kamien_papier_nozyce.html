@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Technologie Internetu - Projekt - gra_1</title>
+</head>
+<body>
+
+    <nav>
+        <img class="logo" src="logo.jpg" alt="">
+
+        <ul>
+            <li><a href="index.html" class="menu">Home</a></li>
+            <li><a href="kamien_papier_nozyce.html" class="menu">Kamień || Papier || Nożyce</a></li>
+            <li><a href="kosci.html" class="menu">Gra w kości</a></li>
+            <li><a href="zapamietywanie_dzwiekow.html" class="menu">Zapamiętaj kolejność</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+
+
+    </nav>
+
+    <section class="game_1_conteiner">
+        <div class="result_field">
+            <div class="result_images">
+                <span class="user_result">
+                    <img src="kamien.png" alt=""/>
+                </span>
+                <span class="cpu_result">
+                    <img src="kamien.png" alt=""/>
+                </span>
+            </div>
+            <div class="result">Zagrajmy!</div>
+
+            <div class="option_images">
+            <span class="option_image">
+                <img src="kamien.png" alt="">
+                <p>Kamień</p>
+            </span>
+
+            <span class="option_image">
+                <img src="papier.png" alt="">
+                <p>Papier</p>
+            </span>
+
+            <span class="option_image">
+                <img src="nozyce.png" alt="">
+                <p>Nożyce</p>
+            </span>
+            
+        </div>
+        </div>
+
+        
+
+    </section>
+
+
+
+
+    <script>
+
+        const mobileNav = document.querySelector('ul');
+        const burgerIcon = document.querySelector('.burger');
+
+        burgerIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            burgerIcon.classList.toggle('active');
+            
+        })
+
+    </script>
+
+    <script src="script_game1.js" defer></script>
+
+</body>
+</html>
